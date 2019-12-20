@@ -93,7 +93,7 @@ class MAPinpainting:
             fig = plt.figure(figsize=(15, 15))
             ax = plt.subplot(141)
             plt.imshow(np.squeeze(np.clip(initial / 255.0, 0, 1)), cmap="gray")
-            plt.title('Blurred')
+            plt.title('Initial')
 
         initial = initial[None, ...]
         mask = mask[None, ...]
@@ -113,7 +113,7 @@ class MAPinpainting:
                 if ((i + 1) == 5 or (i + 1) == 50 or (i + 1) == 100) and plot:
                     ax = plt.subplot(141 + plot_ind)
                     plt.imshow(np.squeeze(np.clip(res / 255.0, 0, 1)), cmap="gray")
-                    plt.title('Denoise at iteration ' + str(i + 1))
+                    plt.title('Iteration ' + str(i + 1))
                     plot_ind = plot_ind + 1
 
                 if gt is not None:

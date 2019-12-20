@@ -107,5 +107,7 @@ res = inpainter.optimize(initial, mask, gt, nr_iters=100, test_iter=5, plot=True
 ```
 
 The optimization is initialized with median inpainting.
+
 ![Median inpainting](img/inpainting_blurred.png "Median inpainting")
+
 ![Inpainting progress](img/inpainting_progress.png "Inpainting progress")
