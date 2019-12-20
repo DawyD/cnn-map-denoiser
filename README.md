@@ -1,6 +1,6 @@
 # Image Restoration using Plug-and-Play CNN MAP Denoisers
 
-This is an implementation of the Image Restoration using Plug-and-Play CNN MAP Denoiser.
+This is an implementation of the [Image Restoration using Plug-and-Play CNN MAP Denoiser](https://arxiv.org/abs/1912.09299).
 
 ## Prerequisities
 
